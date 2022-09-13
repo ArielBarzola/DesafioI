@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 2.9rem;
+  line-height: 1;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: hsl(212, 21%, 14%);
+}
+
+.anuncio {
+  background-color: white;
+  box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.219);
+  width: 90%;
+  max-width: 800px;
+  border-radius: 1em;
+  display: flex;
+  overflow: hidden;
+}
+
+.card_hero {
+  flex: 0 0 50%;
+  position: relative;
+}
+
+.card_img {
+  display: block;
+  width: 100%;
+}
+
+.card_content {
+  flex: 1;
+  padding: 35px 35px 25px 35px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.perfume {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.body {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.75;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.primaryPrice {
+  font-family: 'Fraunces';
+  font-weight: 700;
+  font-size: 2.9rem;
+  margin-top: 8px;
+  margin-right: 12px;
+  color: hsl(158, 36%, 37%);;
+}
+
+.secPrice {
+  text-decoration: line-through;
+  margin-top: 8px;
+  margin-left: 12px;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width:320px;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  margin-top: 24px;
+  border-radius: 8px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+
+}
+
+button:hover {
+  background-color: black;
+}
+
+
+.cart {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+
+
+@media (max-width: 375px) {
+
+  .anuncio{
+    flex-direction: column;
+    width: 95%;
+  }
+  .card_hero {
+    background-image: url(../images/image-product-mobile.jpg);
+  }
+  .card_img {
+    height: 30vh;
+    display: block;
+    object-fit: cover;
+  }
+  .card_content {
+    height: 50vh;
+    margin-top: 1px;
+  }
+
+  .primaryPrice {
+    font-size: 1.7rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  button {
+    margin-bottom: 8px;
+  }
+}
